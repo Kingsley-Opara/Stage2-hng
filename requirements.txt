@@ -6,3 +6,4 @@ requests
 psycopg2-binary
 dj-database-url == 1.2.0 
 django-dotenv
+gunicorn
