@@ -10,7 +10,7 @@ class ApiEndpoint(TestCase):
         password = getpass.getpass()
 
         data = {'email': "udo@gmail.com", "pasword": password}
-        response = requests.post(url=url, json=data)
+        response = requests.post(url=url, json=data, timeout=60)
         print(response.json())
         self.assertEqual(response.status_code, 200)
 
